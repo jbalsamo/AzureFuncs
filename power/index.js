@@ -4,7 +4,7 @@ module.exports = async function (context, req) {
     if (req.body.base && req.body.expo) {
         context.res = {
             // status: 200, /* Defaults to 200 */
-            body: { 'This is the Answer': Math.pow(req.body.base,req.body.expo) }
+            body: { 'Power': Math.pow(req.body.base,req.body.expo) }
         };
     }
     else {
